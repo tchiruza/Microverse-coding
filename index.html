@@ -7,7 +7,111 @@
   </head>
 
   <body>
+     <div id="heading">
+    <h1 id=title>Our first survey form</h1>
+    <p id="description">This is our collaborative project for microverse</p>
+    </div>
+    
+     <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+" required>
+         </div>
+        <div class="form-group">
+                <label for="dropdown">
+                    Select better which you want to select from the dropdown
+                </label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option disabled>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Job ">All time Job</option>
+                    <option value="Full timer learner ">Full timer learner</option>
+                    <option value="off">I don't wanna day</option>
+                    <option value="other">Other</option>
+                   
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would need to required freeCodeCamp to a friend</p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="definitely" checked>
+                        definitely
+                    </label>
 
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="maybe" checked>
+                        I can think (maybe)
+                    </label>
+
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="notsure" checked>
+                     not (really)
+                    </label>
+
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="favorite">
+                What  is your lovely feature of freeCodeCamp        
+    </label>
+                <select name="favorite" id="favorite">
+                    <option disabled>Select An Option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="project">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="Open source ">Open source</option>
+                    <option value="Other">Other</option>
+        
+    </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to improve</p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="front-ends project">
+                        Front-end coding project
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="back-ends project">
+                        back-end coding projects
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="Java desktop">
+                        Java des coding project
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="front-ends project">
+                        Full-stack  coding project
+                    </label>
+                </p>
+            </div>
+            <div class="form-group">
+                <p>Set any comment here</p>
+                <textarea name="comment" id="comment" rows="6" cols="50" placeholder="Just  write any comment here" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+    </form>
+    
     <!--
 
     Hello Camper!
